@@ -1,13 +1,13 @@
-import React from 'react'
-import {render} from 'react-dom';
-
-// this is a dummy component
-function Hi() {
-
-    return <p>Hi there this is cyrus kiprop</p>
-}
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // for styling and theming of our react app
+import App from './components/App';
+import './index.css';
 
 render(
-    <Hi/>,
-    document.getElementById("app")
-)
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('app')
+);
